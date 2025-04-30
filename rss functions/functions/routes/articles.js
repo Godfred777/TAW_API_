@@ -10,17 +10,17 @@ import { rewriteAndStoreArticles } from '../services/rewritingService.js';
 import nlp from 'compromise';
 import { FieldPath } from 'firebase-admin/firestore';
 // Apply the API key middleware to these routes.
-//router.use('/articles', checkApiKey);
-//router.use('/rss', checkApiKey);
-//router.use('/articles/:category', checkApiKey);
-//router.use('/search', checkApiKey);
-//router.use('/related', checkApiKey);
-//router.use('/translate', checkApiKey);
-//router.use('/rewrite', checkApiKey);
-//router.use('/french/articles', checkApiKey);
-//router.use('/swahili/articles', checkApiKey);
-//router.use('/spanish/articles', checkApiKey);
-//router.use('/german/articles', checkApiKey);
+router.use('/articles', checkApiKey);
+router.use('/rss', checkApiKey);
+router.use('/articles/:category', checkApiKey);
+router.use('/search', checkApiKey);
+router.use('/related', checkApiKey);
+router.use('/translate', checkApiKey);
+router.use('/rewrite', checkApiKey);
+router.use('/french/articles', checkApiKey);
+router.use('/swahili/articles', checkApiKey);
+router.use('/spanish/articles', checkApiKey);
+router.use('/german/articles', checkApiKey);
 
 
 

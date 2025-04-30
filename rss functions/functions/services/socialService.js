@@ -95,7 +95,7 @@ export async function processAndStoreSocialPosts() {
   let operationCount = 0;
 
   for (const post of posts) {
-    const contentForAnalysis = post.text || '';;
+    const contentForAnalysis = post.text || '';
     const sentiment = analyzeSentiment(contentForAnalysis);
     let entities = {};
     try {
